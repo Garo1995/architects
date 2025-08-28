@@ -411,6 +411,21 @@ const initSliders = () => {
         },
     });
 
+
+    new Swiper('.stock-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: '.stock-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            674: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1299: { slidesPerView: 4 },
+        },
+    });
+
 };
 
 const initCookieBanner = () => {
