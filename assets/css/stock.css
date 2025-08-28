@@ -42,7 +42,12 @@
     line-height: 120%;
     color: #2F2E2E;
 }
-
+.stock-box h4{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 
 .stock-single-info span{
