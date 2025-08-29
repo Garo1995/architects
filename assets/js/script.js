@@ -1,3 +1,47 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+    const realEstateItems = document.querySelectorAll(".real-estate");
+    const dropLinks = document.querySelectorAll(".select-apartments-drop ul li a");
+    const selectApartmentsPar = document.querySelector(".select-apartments-par");
+
+    // При клике на .real-estate — переключаем класс у родителя
+    realEstateItems.forEach(item => {
+        item.addEventListener("click", function() {
+            this.parentElement.classList.toggle("real-estate-active");
+        });
+    });
+
+    // При клике на пункты списка убираем класс
+    dropLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault(); // чтобы ссылка не перезагружала страницу
+            if (selectApartmentsPar) {
+                selectApartmentsPar.classList.remove("real-estate-active");
+            }
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.querySelectorAll('.sort-boxes').forEach(function(box) {
     box.addEventListener('click', function() {
         this.classList.add('sort-active');
@@ -1559,6 +1603,7 @@ document.addEventListener('click', (event) => {
         event.stopImmediatePropagation();
     }
 }, true);
+
 
 
 

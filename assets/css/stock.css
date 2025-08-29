@@ -124,6 +124,82 @@
 
 
 
+.real-estate{
+    position: relative;
+    padding-right: 40px;
+}
+.real-estate:after{
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+.real-estate-active .real-estate:after{
+    transform: rotate(135deg);
+    top: 14px;
+    right: 16px;
+}
+.real-estate-active .real-estate{
+    border-radius: 20px 20px 0 0;
+}
+.real-estate-active .btn--primary:hover {
+    background: #560300;
+}
+.select-apartments-par{
+    position: relative;
+}
+.select-apartments-drop{
+    background: #560300;
+    border-radius: 0 0 20px 20px;
+    padding: 14px 16px;
+    position: absolute;
+    width: 100%;
+    top: 39px;
+    left: 0;
+    display: none;
+    z-index: 111;
+}
+.select-apartments-drop ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+.select-apartments-drop ul li a{
+    display: flex;
+    width: 100%;
+    border-radius: 16px;
+    padding: 8px 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: unset;
+    transition: 0.3s;
+}
+.select-apartments-drop ul li a:hover{
+    background: #FFFFFF1A;
+}
+
+.real-estate-active .select-apartments-drop{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1599px){
     .stock-single-info p {
         font-size: 20px;
@@ -200,9 +276,33 @@
     .stock-single {
         flex-direction: column;
     }
+
+    .real-estate {
+        padding-right: 26px;
+    }
+    .real-estate:after {
+        top: 14px;
+        right: 11px;
+        width: 6px;
+        height: 6px;
+    }
+    .real-estate-active .real-estate:after {
+        transform: rotate(135deg);
+        top: 12px;
+        right: 10px;
+    }
+
+    .select-apartments-drop {
+        padding: 12px 12px;
+        top: 31px;
+    }
+    .select-apartments-drop ul li a {
+        font-size: 15px;
+    }
 }
 @media (max-width: 570px){
     .stock-box {
         width: 100%;
     }
+
 }
