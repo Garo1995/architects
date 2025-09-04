@@ -390,6 +390,10 @@
     text-align: center;
     border: unset;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 .btn-book-now:hover{
     opacity: 0.8;
@@ -431,6 +435,20 @@
     border: 1px solid #560300;
     width: 48px;
     height: 48px;
+}
+.detalis-pdf:hover, .detalis-fav:hover{
+    background: #5603001A;
+
+}
+.detalis-pdf:active{
+    background: #560300;
+}
+.detalis-pdf:active svg path{
+    stroke: #ffffff;
+}
+.detalis-fav:active svg path{
+    stroke: #560300;
+    fill: #560300;
 }
 .apart-lot-cnt{
     max-width: 675px;
@@ -515,6 +533,39 @@
     background: #09090933;
     gap: 5px;
 }
+
+
+.reserve-lot ul li{
+    color: #2F2E2E80;
+}
+
+.reserve-lot ul li span{
+    color: #3A383880;
+}
+.reserve-lot ul li .white-box{
+    background: #D6D5CC;
+    color: #3A383880;
+}
+
+.reserve-lot .lot-detalis-fon{
+    background: #93928D;
+
+}
+.reserve-lot .lot-detalis-cnt {
+    opacity: 0.5;
+}
+
+
+.reserve-lot .btn-book-now{
+    color: #93928D;
+}
+
+
+.reserve-lot .btn-book-now svg path{
+    stroke: #93928D;
+}
+
+
 
 
 @media (max-width: 1599px){
