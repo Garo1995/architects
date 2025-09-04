@@ -233,6 +233,7 @@
     overflow: hidden;
     position: relative;
     padding-bottom: 30px;
+    padding-right: 10px;
 }
 .maximum-benefit-rel .maximum-pagination{
     position: absolute;
@@ -240,21 +241,26 @@
     top: auto!important;
     left: 0;
     width: 96%!important;
-}
-.maximum-benefit-rel .swiper-pagination-progressbar {
     background: #FFFFFF33;
+    opacity: 1!important;
 }
+
 .maximum-benefit-rel .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: #EDECE2;
+    height: 3px;
+    opacity: 1!important;
+
+}
+.maximum-benefit-rel .swiper-scrollbar-drag {
+    background: #EDECE2;
+    height: 3px;
 }
 
 
 .maximum-benefit-rel .property-card{
     width: 100%;
 }
-.benefit-slider{
-    width: 1630px;
-}
+
 .benefit-slider .property-card__title {
     font-size: 25px;
     margin-bottom: 20px;
@@ -563,6 +569,9 @@
     .stock-box{
         width: calc(33.3333% - 24px);
     }
+    .maximum-benefit-fon {
+        padding: 51px 0px 39px 30px;
+    }
 }
 
 @media (max-width: 1299px){
@@ -591,9 +600,6 @@
         background: #560300;
     }
 
-    .benefit-slider {
-        width: 1208px;
-    }
     .maximum-benefit-fon h2 {
         font-size: 30px;
     }
@@ -679,9 +685,7 @@
         padding: 20px 0 20px 10px;
         border-radius: 10px;
     }
-    .benefit-slider {
-        width: 1008px;
-    }
+
     .lot-detalis-card {
         max-width: 947px;
         border-radius: 20px;
@@ -742,9 +746,7 @@
     .stock-box {
         width: 100%;
     }
-    .benefit-slider {
-        width: 808px;
-    }
+
     .lot-detalis-card {
         padding: 50px 94px 50px 35px;
     }
@@ -755,9 +757,7 @@
     .stock-box {
         width: 100%;
     }
-    .benefit-slider {
-        width: 618px;
-    }
+
     .maximum-benefit-fon {
         padding: 20px 0 20px 10px;
         border-radius: 0;

@@ -493,16 +493,16 @@ const initSliders = () => {
     new Swiper('.benefit-slider', {
         slidesPerView: 4,
         spaceBetween: 24,
-        loop: true,
-        pagination: {
+        scrollbar: {
             el: ".maximum-pagination",
-            type: "progressbar",
+            hide: true,
         },
         breakpoints: {
-            320: { slidesPerView: 2, spaceBetween: 16 },
-            767: { slidesPerView: 3 ,  spaceBetween: 16},
+            320: { slidesPerView: 1, spaceBetween: 16 },
+            575: { slidesPerView: 2, spaceBetween: 16 },
+            767: { slidesPerView: 2 ,  spaceBetween: 16},
             1024: { slidesPerView: 3 },
-            1299: { slidesPerView: 4 },
+            1399: { slidesPerView: 4 },
         },
     });
 
