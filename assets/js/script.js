@@ -25,6 +25,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+const menuItemsApart = document.querySelectorAll(".apart-lot-menu ul li");
+const boxes = document.querySelectorAll(".apart-lot-box");
+
+menuItemsApart.forEach(item => {
+    item.addEventListener("click", () => {
+        // убираем активный класс у всех пунктов меню
+        menuItemsApart.forEach(el => el.classList.remove("lot-menu-active"));
+        // ставим активный класс на выбранный
+        item.classList.add("lot-menu-active");
+
+        // скрываем все блоки
+        boxes.forEach(box => box.classList.remove("active"));
+        // показываем тот, который соответствует data-apart
+        const target = item.getAttribute("data-apart");
+        document.querySelector("." + target).classList.add("active");
+    });
+});
 
 
 
@@ -456,6 +473,7 @@ const initSliders = () => {
     });
 
 
+
     new Swiper('.stock-slider', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -469,6 +487,27 @@ const initSliders = () => {
             1299: { slidesPerView: 4 },
         },
     });
+
+
+
+    new Swiper('.benefit-slider', {
+        slidesPerView: 4,
+        spaceBetween: 24,
+        loop: true,
+        pagination: {
+            el: ".maximum-pagination",
+            type: "progressbar",
+        },
+        breakpoints: {
+            320: { slidesPerView: 2, spaceBetween: 16 },
+            767: { slidesPerView: 3 ,  spaceBetween: 16},
+            1024: { slidesPerView: 3 },
+            1299: { slidesPerView: 4 },
+        },
+    });
+
+
+
 
 };
 

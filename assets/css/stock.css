@@ -194,16 +194,367 @@
 
 
 
+.maximum-benefit{
+    margin-top: 75px;
+}
+.maximum-benefit-fon{
+    padding: 70px 0 50px 56px;
+    background: #560300;
+    position: relative;
+    border-radius: 36px;
+}
+
+.maximum-benefit-fon:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 760px;
+    background-image: url("../images/cbb05132.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 36px;
+
+}
+
+.maximum-benefit-fon h2{
+    color: #F5F5F5;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+
+}
+.maximum-benefit-rel{
+    margin-top: 32px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
+}
+.maximum-benefit-rel .maximum-pagination{
+    position: absolute;
+    bottom: 0!important;
+    top: auto!important;
+    left: 0;
+}
+.maximum-benefit-rel .swiper-pagination-progressbar {
+    background: #FFFFFF33;
+}
+.maximum-benefit-rel .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #EDECE2;
+}
 
 
+.maximum-benefit-rel .property-card{
+    width: 100%;
+}
+.benefit-slider{
+    width: 1630px;
+}
+.benefit-slider .property-card__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.benefit-slider .property-card__plan {
+    margin-bottom: 24px;
+}
 
 
+.apart-lot-box {
+    display: none!important;
+}
+.apart-lot-box.active {
+    display: flex!important;
+}
+
+
+.lot-detalis-main{
+    margin-top: 40px;
+}
+.lot-detalis-main h1{
+    font-weight: 400;
+}
+.lot-detalis-flex{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.lot-detalis-box{
+    max-width: 670px;
+    width: 100%;
+}
+.lot-detalis-box ul li{
+    gap: 16px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #4F4F4F66;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2F2E2E;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.lot-detalis-box ul li span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: right;
+    color: #3A3838;
+}
+.lot-detalis-box ul li:last-child{
+    border-bottom: none;
+}
+
+.lot-detalis-box ul li .white-box{
+    color: #000000;
+
+    font-weight: 500;
+    background: #FF630B17;
+    border-radius: 40px;
+    padding: 8px 16px;
+
+}
+
+
+.lot-detalis-fon{
+    margin-top: 32px;
+    background: #560300;
+    border-radius: 36px;
+    padding: 32px;
+    width: 100%;
+
+
+}
+.lot-detalis-cnt{
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    padding: 0 24px;
+}
+.lot-detalis-price del{
+    color: #FFFFFF80;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    display: block;
+
+}
+
+
+.lot-detalis-price strong{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    display: block;
+}
+
+
+.stock-apartment{
+    background: #FFFFFF4D;
+    border-radius: 999px;
+    padding: 4px 12px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn-book-now{
+    margin-top: 34px;
+    width: 100%;
+    height: 48px;
+    border-radius: 32px;
+    padding: 12px 32px;
+    background: #EDECE2;
+    color: #560300;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    border: unset;
+    transition: 0.3s;
+}
+.btn-book-now:hover{
+    opacity: 0.8;
+}
+
+.lot-detalis-card{
+    max-width: 947px;
+    width: 100%;
+    border-radius: 36px;
+    background: #FFFFFF80;
+    padding: 120px 192px 120px 80px;
+    position: relative;
+}
+.lot-detalis-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    top: 56px;
+    right: 56px;
+}
+.icon-compass{
+    display: flex;
+    width: 88px;
+    margin-bottom: 24px;
+}
+.icon-compass img{
+    width: 100%;
+}
+
+
+.detalis-pdf, .detalis-fav{
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #560300;
+    width: 48px;
+    height: 48px;
+}
+.apart-lot-cnt{
+    max-width: 675px;
+    width: 100%;
+}
+
+.apart-lot-box svg{
+    width: 100%;
+    height: 430px;
+}
+.apart-lot-box img{
+    width: 100%;
+}
+.apart-lot-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0;
+    width: max-content;
+    border: 1px solid #63646633;
+    border-radius: 52px;
+    padding: 2px;
+}
+
+.apart-lot-menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.apart-lot-menu ul li{
+    border-radius: 32px;
+    padding: 12px 32px;
+    color: #636466;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.apart-lot-menu ul li.lot-menu-active{
+    background: #FF630B17;
+    color: #560300;
+}
+
+.lot-menu-mob{
+    display: none;
+}
+
+
+.reserve-card .property-card__discount-badge{
+    background: #0909091A;
+
+}
+
+.reserve-card .property-card__price{
+    color: #0909094D;
+}
+.reserve-card .property-card__info-separator{
+    color: #0909094D;
+}
+.reserve-card .property-card__info-item{
+    color: #0909094D;
+}
+.reserve-card .property-card__delivery{
+    color: #0909094D;
+}
+.reserve-card .property-card__badges{
+    opacity: 0.5;
+}
+.reserve-card .property-card__title{
+    color: #0909094D;
+}
+.reserve-card .property-card__choose-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #09090933;
+    gap: 5px;
+}
 
 
 @media (max-width: 1599px){
     .stock-single-info p {
         font-size: 20px;
     }
+    .maximum-benefit-fon {
+        padding: 51px 0 39px 40px;
+        border-radius: 20px;
+    }
+    .lot-detalis-card {
+        padding: 90px 140px 80px 70px;
+    }
+
+
+
+    .lot-detalis-price strong {
+        font-size: 42px;
+    }
+    .btn-book-now {
+        margin-top: 20px;
+    }
+    .lot-detalis-box ul li {
+        padding: 13px 20px;
+        font-size: 20px;
+    }
+    .lot-detalis-fon {
+        border-radius: 24px;
+        padding: 26px;
+    }
+    .lot-detalis-icons {
+        top: 54px;
+        right: 20px;
+    }
+    .apart-lot-menu {
+        margin: 20px auto 0;
+    }
+    .lot-detalis-box ul li span {
+        font-size: 22px;
+    }
+    .lot-detalis-card {
+        padding: 90px 125px 70px 60px;
+    }
+    .icon-compass {
+        width: 70px;
+    }
+
 }
 
 
@@ -238,6 +589,61 @@
         opacity: 1;
         background: #560300;
     }
+
+    .benefit-slider {
+        width: 1208px;
+    }
+    .maximum-benefit-fon h2 {
+        font-size: 30px;
+    }
+    .lot-detalis-card {
+        padding: 65px 95px 70px 60px;
+        max-width: 592px;
+        border-radius: 20px;
+    }
+    .apart-lot-box svg {
+        height: 345px;
+    }
+
+    .icon-compass {
+        width: 54px;
+        margin-bottom: 10px;
+    }
+    .detalis-pdf, .detalis-fav {
+        width: 40px;
+        height: 40px;
+    }
+    .apart-lot-menu ul li {
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+    .lot-detalis-box ul li span {
+        font-size: 18px;
+    }
+    .lot-detalis-box ul li {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .lot-detalis-price strong {
+        font-size: 34px;
+    }
+    .lot-detalis-price del {
+        font-size: 20px;
+    }
+    .lot-detalis-cnt {
+        padding: 0 10px;
+    }
+    .lot-detalis-fon {
+        border-radius: 24px;
+        padding: 22px;
+        margin-top: 16px;
+    }
+    .stock-apartment {
+        font-size: 16px;
+        line-height: 22.35px;
+        margin-bottom: 5px;
+    }
+
 }
 
 
@@ -268,6 +674,33 @@
     .stock-single-info p {
         font-size: 18px;
     }
+    .maximum-benefit-fon {
+        padding: 20px 0 20px 10px;
+        border-radius: 10px;
+    }
+    .benefit-slider {
+        width: 1008px;
+    }
+    .lot-detalis-card {
+        max-width: 947px;
+        border-radius: 20px;
+        padding: 120px 192px 120px 80px;
+    }
+    .lot-detalis-flex{
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+    .lot-detalis-box {
+        max-width: 940px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+    .lot-detalis-fon {
+        margin-top: 0;
+    }
+
 }
 @media (max-width: 1020px){
     .stock-box {
@@ -300,9 +733,108 @@
         font-size: 15px;
     }
 }
+
+@media (max-width: 767px){
+    .stock-box {
+        width: 100%;
+    }
+    .benefit-slider {
+        width: 808px;
+    }
+    .lot-detalis-card {
+        padding: 50px 94px 50px 35px;
+    }
+
+
+}
 @media (max-width: 570px){
     .stock-box {
         width: 100%;
     }
+    .benefit-slider {
+        width: 618px;
+    }
+    .maximum-benefit-fon {
+        padding: 20px 0 20px 10px;
+        border-radius: 0;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .maximum-benefit-fon h2 {
+        font-size: 24px;
+    }
+    .benefit-slider .property-card__title {
+        font-size: 24px;
+    }
+    .apart-lot-menu{
+        display: none;
+    }
+    .lot-detalis-icons {
+        top: auto;
+        bottom: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        right: 0;
+        padding: 0 24px;
+    }
+    .lot-detalis-card {
+        padding: 33px 30px 80px 30px;
+    }
+
+    .detalis-pdf{
+        display: none;
+    }
+    .icon-compass {
+        width: 40px;
+        margin-bottom: 0;
+    }
+
+
+    .apart-lot-box svg {
+        height: 200px;
+    }
+    .lot-detalis-flex {
+        margin-top: 24px;
+    }
+    .lot-detalis-main {
+        margin-top: 24px;
+    }
+    .lot-menu-mob {
+        display: block;
+    }
+    .lot-menu-mob .apart-lot-menu{
+        display: block;
+    }
+    .apart-lot-menu ul li {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    .lot-detalis-price del {
+        font-size: 14px;
+    }
+    .lot-detalis-price strong {
+        font-size: 24px;
+    }
+    .lot-detalis-fon {
+        border-radius: 16px;
+        padding: 16px;
+    }
+    .lot-detalis-cnt {
+        padding: 0;
+        justify-content: space-between;
+    }
+    .stock-apartment {
+        font-size: 14px;
+        line-height: 20.35px;
+    }
+    .lot-detalis-box ul li {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .lot-detalis-box ul li span {
+        font-size: 14px;
+    }
+
 
 }
