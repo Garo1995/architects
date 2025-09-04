@@ -489,11 +489,13 @@ const initSliders = () => {
     });
 
 
-
     new Swiper('.benefit-slider', {
         slidesPerView: 4,
         spaceBetween: 24,
-        mousewheel: true,
+        mousewheel: {
+            forceToAxis: true, // скролл работает только по оси слайдера (горизонталь)
+            releaseOnEdges: true // если дошли до края, отдаём скролл обратно странице
+        },
         scrollbar: {
             el: ".maximum-pagination",
             hide: true,
