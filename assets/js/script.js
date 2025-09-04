@@ -493,6 +493,7 @@ const initSliders = () => {
     new Swiper('.benefit-slider', {
         slidesPerView: 4,
         spaceBetween: 24,
+        mousewheel: true,
         scrollbar: {
             el: ".maximum-pagination",
             hide: true,
